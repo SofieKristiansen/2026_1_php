@@ -31,18 +31,28 @@ main{
         height: 100vh;
         width: 100%;
 
-        .marker{
-            width: 0.8rem;
-            height: 0.8rem;
-            border-radius: 50%;
-            background-color: red;
-            cursor: pointer;
-        }
+    .marker {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: red;      /* Farven kan ændres dynamisk med JS */
+        border: 2px solid white;    /* Hvid kant, så den står tydeligt frem */
+        box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Lidt dybde */
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
+    /* Effekt når man hover */
+    .marker:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    }
+    
+    /*
     aside {
 
-    }
+    }*/
 }
 
 footer{
