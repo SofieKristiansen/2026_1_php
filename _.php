@@ -3,7 +3,7 @@
 // ##############################
 function _($text){
     echo htmlspecialchars($text);
-
+    
 }
 
 // ##############################
@@ -39,7 +39,25 @@ function _validate_user_password(){
     return $user_password;
 }
 
+
 // ##############################
+define("user_username_min", 6);
+define("user_username_max", 50);
+function _validate_user_username(){
+    $user_username = $_POST["user_username"] ?? "";
+    $user_username = trim($user_username);
+    if(strlen($user_username) < user_username_min){
+        throw new Exception("Username min ".user_username_min." characters", 400);
+    }
+    if(strlen($user_username) > user_username_max){
+        throw new Exception("Username max ".user_username_max." characters", 400);
+    }
+    return $user_username;
+}
+
+// ##############################
+
+
 function _no_cache(){
     header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
     header("Pragma: no-cache");
