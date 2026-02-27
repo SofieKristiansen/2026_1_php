@@ -12,7 +12,8 @@ require_once __DIR__ . "/properties.php";
 <script>
 
     // Initialiser kortet
-    const map = L.map('map').setView([55.68586933210611, 12.56909806026006], 12);
+    // const map = L.map('map').setView([55.68586933210611, 12.56909806026006], 12);
+    window.map = L.map('map').setView([55.6858, 12.5690], 12);
 
     // Tile layer (OpenStreetMap)
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
@@ -24,7 +25,9 @@ require_once __DIR__ . "/properties.php";
     // Hent properties fra PHP
     const properties = <?php echo json_encode($properties); ?>;
 
-    properties.forEach(property => {
+    properties
+    .filter(p => p.visible)
+    .forEach(property => {
         const iconHtml = `<button class="marker ${property.type}" mix-get="api-get-item?item_pk=${property.id}"></button>`;
         
         L.marker([property.lat, property.lng], {
