@@ -26,5 +26,7 @@ require_once __DIR__."/_.php";
     <a href="/">Signup</a>
     <a href="/">Login</a>
     <button mix-get="api-get-item">Get item</button>
+    <button mix-get="/apis/api-get-more-items">Get more items</button>
+    <button onclick="test()">Tests</button>
 </nav>
     
