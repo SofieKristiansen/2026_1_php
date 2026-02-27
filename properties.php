@@ -8,6 +8,7 @@ $properties = [
         "lng" => 12.5646,
         "price" => "1.200.000 DKK",
         "image" => "images/apartment2.jpg",
+        "visible" => true
     ],
     [
         "id" => 2,
@@ -17,6 +18,7 @@ $properties = [
         "lng" => 12.5267,
         "price" => "3.500.000 DKK",
         "image" => "images/villa.jpg",
+        "visible" => true
     ],
     [
         "id" => 3,
@@ -26,6 +28,7 @@ $properties = [
         "lng" => 12.5400,
         "price" => "2.000.000 DKK",
         "image" => "images/cooperative.jpg",
+        "visible" => true
     ],
     [
         "id" => 4,
@@ -35,6 +38,7 @@ $properties = [
         "lng" => 12.5500,
         "price" => "750.000 DKK",
         "image" => "images/land.jpg",
+        "visible" => true
     ],
     [
         "id" => 5,
@@ -44,6 +48,7 @@ $properties = [
         "lng" => 12.5534,
         "price" => "2.100.000 DKK",
         "image" => "images/apartment3.jpg",
+        "visible" => true
     ],
     [
         "id" => 6,
@@ -53,6 +58,7 @@ $properties = [
         "lng" => 12.5001,
         "price" => "4.800.000 DKK",
         "image" => "images/villa2.jpg",
+        "visible" => false
     ],
     [
         "id" => 7,
@@ -62,6 +68,7 @@ $properties = [
         "lng" => 12.5618,
         "price" => "1.650.000 DKK",
         "image" => "images/cooperative2.jpg",
+        "visible" => false
     ],
     [
         "id" => 8,
@@ -71,6 +78,7 @@ $properties = [
         "lng" => 12.6123,
         "price" => "950.000 DKK",
         "image" => "images/land2.jpg",
+        "visible" => false
     ],
 ];
 ?>
