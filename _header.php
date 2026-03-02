@@ -10,10 +10,7 @@ require_once __DIR__."/_.php";
     <link rel="stylesheet" href="app.css">
 
     <!-- Leaflet CSS -->
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
     <script src="mixhtml.js" defer></script>
     <script src="app.js" defer></script>
@@ -25,8 +22,8 @@ require_once __DIR__."/_.php";
     <a href="/">Home</a>
     <a href="/">Signup</a>
     <a href="/">Login</a>
-    <button mix-get="api-get-item">Get item</button>
+    <!-- <button mix-get="api-get-item">Get item</button> -->
     <button mix-get="/apis/api-get-more-items">Get more items</button>
-    <button onclick="test()">Tests</button>
+    <!-- <button onclick="test()">Tests</button> -->
 </nav>
     
