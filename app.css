@@ -53,11 +53,27 @@ main{
     }
 
     aside {
+        .types{
+            .apartment { background-color: blue; }
+            .villa { background-color: red; }
+            .andelslejlighed { background-color: green; }
+            .land { background-color: yellow; }
+            
+            > div {
+                padding: 10px 15px;
+                border-radius: 6px;
+                font-weight: bold;
+                color: black;
+                cursor: default;
+                margin: 0 1rem 0.5rem 1rem;
+            }
+        }
+
         .property {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            padding-left: 1rem;
+            padding-left: 0 0 1rem;
         }  
     }
 }

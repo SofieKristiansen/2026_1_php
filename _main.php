@@ -43,7 +43,13 @@ $properties = $stmt->fetchAll();
 </script>
 
 </script>
+<aside>
+    <section class="types">
+        <div class="apartment">Apartment</div>
+        <div class="villa">Villa</div>
+        <div class="andelslejlighed">Cooperative apartment</div>
+        <div class="land">Land</div>
+    </section>
 
-    <aside>Property</aside>
-
+    </aside>
 </main>
